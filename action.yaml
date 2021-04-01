@@ -1,0 +1,12 @@
+name: 'Setup powerpack'
+author: 'Ross MacArthur'
+description: 'Install powerpack. Supercharge your Alfred workflows by building them in Rust!'
+branding:
+  icon: 'zap'
+  color: 'yellow'
+inputs:
+  powerpack-version:
+    description: 'A valid semver specifier of the powerpack version to install'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
